@@ -12,10 +12,10 @@ class Pokemon
   #     self.update
   #   else
        sql = <<-SQL
-         INSERT INTO pokemon (name, type, db)
-         VALUES (?, ?, ?)
+         INSERT INTO pokemon (name, type)
+         VALUES (?, ?)
          SQL
-         db[:conn].execut(sql)
+         db.execut(sql)
     # end
 
   end
